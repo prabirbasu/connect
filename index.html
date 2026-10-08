@@ -3,12 +3,883 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Prabir Basu</title>
+
+  <title>Dr. Prabir Basu | Urologist & Andrologist | Men's Sexual Health</title>
+
+  <meta name="description" content="Private, specialist-led men's sexual health and andrology care with Dr. Prabir Basu, Consultant Urologist & Andrologist. Evidence-based evaluation for erectile dysfunction, libido, testosterone concerns and men's sexual health after 40.">
+
+  <link rel="canonical" href="https://connect.drprabirbasu.com/">
+
+  <meta property="og:title" content="Dr. Prabir Basu | Men's Sexual Health & Longevity">
+  <meta property="og:description" content="Private, evidence-based specialist care for men who want to understand what has changed — and what to do next.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://connect.drprabirbasu.com/">
+  <meta property="og:image" content="https://connect.drprabirbasu.com/PROFILE%20PIC.jpg">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #17233b;
+      background: #ffffff;
+      line-height: 1.65;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid #e7edf4;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand strong {
+      display: block;
+      font-family: Georgia, serif;
+      font-size: 1.28rem;
+      color: #102a43;
+    }
+
+    .brand span {
+      display: block;
+      color: #64748b;
+      font-size: .78rem;
+      margin-top: 2px;
+    }
+
+    .nav-cta {
+      color: #ffffff;
+      background: #0b5ea8;
+      padding: 11px 18px;
+      border-radius: 7px;
+      font-size: .9rem;
+      font-weight: 700;
+    }
+
+    /* HERO */
+
+    .hero {
+      background:
+        linear-gradient(120deg, #f7fbff 0%, #eef6fc 58%, #e4f0f8 100%);
+      padding: 72px 0;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: #0b5ea8;
+      font-size: .78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      color: #102a43;
+      font-size: clamp(2.5rem, 5vw, 4.4rem);
+      line-height: 1.06;
+      letter-spacing: -1.7px;
+      margin-bottom: 22px;
+    }
+
+    .hero-lead {
+      color: #475569;
+      font-size: 1.14rem;
+      max-width: 650px;
+      margin-bottom: 27px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #0b5ea8;
+      color: #ffffff;
+      padding: 15px 24px;
+      border-radius: 8px;
+      font-weight: 800;
+      box-shadow: 0 8px 22px rgba(11,94,168,.17);
+    }
+
+    .button:hover {
+      background: #084b86;
+    }
+
+    .trust-line {
+      color: #64748b;
+      margin-top: 17px;
+      font-size: .88rem;
+    }
+
+    .hero-photo {
+      position: relative;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      max-height: 610px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 22px;
+      display: block;
+      box-shadow: 0 25px 60px rgba(16,42,67,.18);
+    }
+
+    .credential-card {
+      position: absolute;
+      left: -25px;
+      bottom: 25px;
+      background: rgba(255,255,255,.96);
+      padding: 16px 20px;
+      border-radius: 10px;
+      box-shadow: 0 12px 35px rgba(15,23,42,.15);
+      max-width: 260px;
+    }
+
+    .credential-card strong {
+      color: #102a43;
+      display: block;
+    }
+
+    .credential-card span {
+      color: #64748b;
+      font-size: .82rem;
+    }
+
+    /* GENERAL SECTIONS */
+
+    section {
+      padding: 85px 0;
+    }
+
+    .section-intro {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .section-intro.center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2 {
+      font-family: Georgia, serif;
+      color: #102a43;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      margin-bottom: 17px;
+    }
+
+    .section-intro p {
+      color: #64748b;
+      font-size: 1.05rem;
+    }
+
+    /* CONCERNS */
+
+    .concerns {
+      background: #ffffff;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #f8fafc;
+      border: 1px solid #e5edf5;
+      padding: 27px;
+      border-radius: 13px;
+    }
+
+    .card-number {
+      color: #0b5ea8;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #102a43;
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #64748b;
+      font-size: .93rem;
+    }
+
+    /* REFRAME */
+
+    .reframe {
+      background: #102a43;
+      color: white;
+    }
+
+    .reframe-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .reframe h2 {
+      color: #ffffff;
+    }
+
+    .reframe p {
+      color: #cbd5e1;
+      margin-bottom: 16px;
+    }
+
+    .quote {
+      border-left: 3px solid #58a6df;
+      padding-left: 24px;
+      font-family: Georgia, serif;
+      font-size: 1.55rem;
+      line-height: 1.4;
+      color: #ffffff;
+    }
+
+    /* METHOD */
+
+    .method {
+      background: #f7fafc;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+    }
+
+    .step {
+      background: #ffffff;
+      border: 1px solid #e4ebf3;
+      padding: 24px 18px;
+      border-radius: 12px;
+    }
+
+    .step span {
+      display: inline-flex;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: #e8f3fb;
+      color: #0b5ea8;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .step h3 {
+      color: #102a43;
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+
+    .step p {
+      color: #64748b;
+      font-size: .87rem;
+    }
+
+    /* DOCTOR */
+
+    .doctor-grid {
+      display: grid;
+      grid-template-columns: .78fr 1.22fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .doctor-photo img {
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 20px 50px rgba(15,23,42,.12);
+    }
+
+    .doctor-copy p {
+      color: #64748b;
+      margin-bottom: 16px;
+    }
+
+    .credentials {
+      margin: 23px 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    .credentials div {
+      border-left: 3px solid #0b5ea8;
+      padding: 5px 0 5px 14px;
+      color: #334155;
+      font-weight: 600;
+    }
+
+    /* APPLICATION */
+
+    .application {
+      background: #eef6fc;
+    }
+
+    .application-box {
+      background: #ffffff;
+      max-width: 850px;
+      margin: auto;
+      padding: 52px;
+      border-radius: 18px;
+      box-shadow: 0 18px 50px rgba(16,42,67,.09);
+      text-align: center;
+    }
+
+    .application-box p {
+      color: #64748b;
+      max-width: 660px;
+      margin: 0 auto 25px;
+    }
+
+    .application-note {
+      display: block;
+      margin-top: 17px;
+      color: #64748b;
+      font-size: .82rem;
+    }
+
+    /* FAQ */
+
+    .faq {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    details {
+      border-bottom: 1px solid #dfe7ef;
+      padding: 20px 0;
+    }
+
+    summary {
+      cursor: pointer;
+      color: #102a43;
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    details p {
+      color: #64748b;
+      padding-top: 13px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #091e32;
+      color: #cbd5e1;
+      padding: 45px 0;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 35px;
+      align-items: flex-start;
+    }
+
+    footer strong {
+      color: #ffffff;
+      font-family: Georgia, serif;
+      font-size: 1.15rem;
+    }
+
+    footer p {
+      margin-top: 7px;
+      font-size: .83rem;
+      max-width: 610px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+      .hero {
+        padding: 48px 0 60px;
+      }
+
+      .hero-grid,
+      .reframe-grid,
+      .doctor-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .hero-copy {
+        order: 1;
+      }
+
+      .hero-photo {
+        order: 2;
+      }
+
+      .hero-photo img {
+        max-height: 500px;
+      }
+
+      .credential-card {
+        left: 15px;
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .steps {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .nav {
+        min-height: 68px;
+      }
+
+      .brand span {
+        display: none;
+      }
+
+      .nav-cta {
+        font-size: .78rem;
+        padding: 9px 12px;
+      }
+
+      h1 {
+        font-size: 2.65rem;
+      }
+
+      .hero-lead {
+        font-size: 1rem;
+      }
+
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .application-box {
+        padding: 35px 22px;
+      }
+
+      .footer-grid {
+        flex-direction: column;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr. Prabir Basu",
+    "url": "https://connect.drprabirbasu.com/",
+    "image": "https://connect.drprabirbasu.com/PROFILE%20PIC.jpg",
+    "description": "Consultant Urologist and Andrologist with a focus on men's sexual health, erectile dysfunction, male infertility and andrology.",
+    "medicalSpecialty": ["Urology", "Andrology"]
+  }
+  </script>
 </head>
 
 <body>
-  <h1>Dr. Prabir Basu</h1>
-  <h2>Men's Sexual Health & Longevity</h2>
-  <p>New website coming soon.</p>
+
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <strong>Dr. Prabir Basu</strong>
+      <span>Consultant Urologist &amp; Andrologist</span>
+    </div>
+
+    <a class="nav-cta" href="#apply">
+      Apply for a Consultation
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-copy">
+        <span class="eyebrow">Men's Sexual Health &amp; Longevity</span>
+
+        <h1>
+          Your Sexual Health Changes After 40.<br>
+          Your Care Should Change Too.
+        </h1>
+
+        <p class="hero-lead">
+          Private, specialist-led care for men who want to understand
+          why their erections, libido or sexual health has changed —
+          and what to do next.
+        </p>
+
+        <a class="button" href="#apply">
+          Apply for a Private Consultation →
+        </a>
+
+        <p class="trust-line">
+          Confidential &nbsp;•&nbsp; Evidence-based &nbsp;•&nbsp; Personalised
+        </p>
+      </div>
+
+      <div class="hero-photo">
+        <img
+          src="PROFILE%20PIC.jpg"
+          alt="Dr. Prabir Basu, Consultant Urologist and Andrologist"
+        >
+
+        <div class="credential-card">
+          <strong>Dr. Prabir Basu</strong>
+          <span>MBBS (Honours) • MS (Gold Medalist) • MRCS • DNB</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="concerns">
+    <div class="container">
+
+      <div class="section-intro center">
+        <span class="eyebrow">When something feels different</span>
+        <h2>Does this sound familiar?</h2>
+        <p>
+          Sexual health changes are often more complex than a single symptom.
+          The first step is understanding what has changed and what may be driving it.
+        </p>
+      </div>
+
+      <div class="card-grid">
+
+        <div class="card">
+          <div class="card-number">01</div>
+          <h3>Erections feel less reliable</h3>
+          <p>
+            Firmness or staying power has changed, even though things were previously predictable.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-number">02</div>
+          <h3>Libido has declined</h3>
+          <p>
+            Desire is lower than before, and you are not sure whether age, stress, hormones or health is responsible.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-number">03</div>
+          <h3>Tablets are less predictable</h3>
+          <p>
+            Medication may help sometimes but you want to understand why the problem exists rather than simply escalating treatment.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-number">04</div>
+          <h3>Energy and recovery have changed</h3>
+          <p>
+            Sleep, weight, fitness, metabolic health or energy no longer feel the way they used to.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-number">05</div>
+          <h3>You are worried about testosterone</h3>
+          <p>
+            You want a proper medical assessment rather than making decisions based on symptoms or an isolated laboratory value.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-number">06</div>
+          <h3>You want clarity, not judgement</h3>
+          <p>
+            You value privacy and want a specialist who can discuss sensitive concerns clinically and confidentially.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="reframe">
+    <div class="container reframe-grid">
+
+      <div>
+        <span class="eyebrow">A broader clinical view</span>
+        <h2>The symptom may be sexual. The assessment should be broader.</h2>
+      </div>
+
+      <div>
+        <p>
+          Erectile function and sexual wellbeing can intersect with vascular health,
+          diabetes, blood pressure, metabolic health, hormones, medications,
+          sleep, psychological factors and relationships.
+        </p>
+
+        <p>
+          That does not mean every sexual symptom indicates serious disease.
+          It means good care starts with a careful history, appropriate examination
+          and targeted investigation — not assumptions.
+        </p>
+
+        <div class="quote">
+          “The objective is not simply to treat a symptom. It is to understand the man behind it.”
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="method">
+    <div class="container">
+
+      <div class="section-intro center">
+        <span class="eyebrow">The PeakSpan approach</span>
+        <h2>A structured pathway from uncertainty to clarity</h2>
+        <p>
+          A personalised clinical approach designed around assessment,
+          appropriate treatment and longitudinal men's health.
+        </p>
+      </div>
+
+      <div class="steps">
+
+        <div class="step">
+          <span>1</span>
+          <h3>Assess</h3>
+          <p>Understand your medical, sexual and lifestyle history in context.</p>
+        </div>
+
+        <div class="step">
+          <span>2</span>
+          <h3>Identify</h3>
+          <p>Look for relevant physical, metabolic, hormonal and psychosocial drivers.</p>
+        </div>
+
+        <div class="step">
+          <span>3</span>
+          <h3>Personalise</h3>
+          <p>Build an evidence-based plan appropriate to your findings and priorities.</p>
+        </div>
+
+        <div class="step">
+          <span>4</span>
+          <h3>Measure</h3>
+          <p>Review response rather than relying only on assumptions or symptoms.</p>
+        </div>
+
+        <div class="step">
+          <span>5</span>
+          <h3>Optimise</h3>
+          <p>Adjust the plan as your health, goals and clinical needs evolve.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container doctor-grid">
+
+      <div class="doctor-photo">
+        <img
+          src="PROFILE%20PIC.jpg"
+          alt="Dr. Prabir Basu"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="doctor-copy">
+        <span class="eyebrow">Your specialist</span>
+
+        <h2>Dr. Prabir Basu</h2>
+
+        <p>
+          Consultant Urologist and Andrologist with a clinical focus on
+          men's sexual health, erectile dysfunction, male infertility,
+          hormonal evaluation and advanced andrology.
+        </p>
+
+        <div class="credentials">
+          <div>MBBS (Honours)</div>
+          <div>MS — Gold Medalist</div>
+          <div>MRCS — Royal College, England</div>
+          <div>DNB — Genitourinary Surgery</div>
+        </div>
+
+        <p>
+          The goal is straightforward: provide men with specialist,
+          confidential and evidence-based care while looking beyond
+          the immediate symptom to the wider clinical picture.
+        </p>
+
+        <a class="button" href="#apply">
+          Apply for a Private Consultation →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="application" id="apply">
+    <div class="container">
+
+      <div class="application-box">
+
+        <span class="eyebrow">Private consultation</span>
+
+        <h2>Start with the right conversation.</h2>
+
+        <p>
+          If you are looking for a confidential specialist assessment of
+          erectile function, libido, testosterone concerns or men's sexual health,
+          the first step is to determine whether a private consultation is appropriate.
+        </p>
+
+        <a class="button" href="https://drprabirbasu.com/">
+          Apply for a Private Consultation →
+        </a>
+
+        <span class="application-note">
+          Medical suitability and treatment recommendations can only be determined after appropriate clinical assessment.
+        </span>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <div class="section-intro center">
+        <span class="eyebrow">Frequently asked questions</span>
+        <h2>Before you apply</h2>
+      </div>
+
+      <div class="faq">
+
+        <details>
+          <summary>Is the consultation confidential?</summary>
+          <p>
+            Yes. Sexual and reproductive health concerns are handled as confidential medical information.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do erection problems always mean low testosterone?</summary>
+          <p>
+            No. Erectile dysfunction can have multiple contributing factors.
+            Hormonal assessment is useful when clinically indicated, but testosterone
+            should not be assumed to be the cause without appropriate evaluation.
+          </p>
+        </details>
+
+        <details>
+          <summary>Will I automatically need multiple tests?</summary>
+          <p>
+            No. Investigations should be targeted to your history, examination,
+            risk factors and clinical findings rather than ordered routinely without indication.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is this only for erectile dysfunction?</summary>
+          <p>
+            No. Andrology includes a broader range of male sexual and reproductive
+            concerns including libido, hormonal issues, male infertility and other
+            specialist men's health problems.
+          </p>
+        </details>
+
+        <details>
+          <summary>Does applying guarantee a particular treatment?</summary>
+          <p>
+            No. Treatment recommendations depend on clinical assessment.
+            No specific medication, procedure or outcome can be guaranteed in advance.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+
+    <div>
+      <strong>Dr. Prabir Basu</strong>
+      <p>
+        Consultant Urologist &amp; Andrologist • Men's Sexual Health &amp; Longevity
+      </p>
+    </div>
+
+    <div>
+      <p>
+        This website provides general information and does not replace an individual
+        medical consultation, diagnosis or treatment recommendation.
+      </p>
+      <p>
+        © 2026 Dr. Prabir Basu. All rights reserved.
+      </p>
+    </div>
+
+  </div>
+</footer>
+
 </body>
 </html>
